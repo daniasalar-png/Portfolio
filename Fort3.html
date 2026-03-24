@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles1.css" />
+
+    <style>
+      /* Fix for navbar overlap */
+      .gallery {
+        padding-top: 100px;
+        padding-bottom: 60px;
+        text-align: center;
+      }
+
+      .gallery h2 {
+        font-size: 36px;
+        color: #7f5539;
+        margin-bottom: 40px;
+      }
+
+      .gallery h2::after {
+        content: "";
+        width: 60px;
+        height: 3px;
+        background: #7f5539;
+        display: block;
+        margin: 10px auto;
+      }
+
+      /* GRID */
+      .gallery-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        padding: 0 40px;
+      }
+
+      /* IMAGES */
+      .gallery-container img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      /* HOVER EFFECT 🔥 */
+      .gallery-container img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">Forts</div>
+      <ul class="nav-links">
+        <li><a href="Fort.html">Home</a></li>
+        <li><a href="Fort1.html">About</a></li>
+        <li><a href="Fort2.html">Forts</a></li>
+        <li><a href="Fort3.html">Gallery</a></li>
+        <li><a href="Fort4.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery">
+      <h2>Gallery</h2>
+
+      <div class="gallery-container">
+        <img
+          src="https://www.cygnetthotels.com/blog/wp-content/uploads/2025/04/3333.png"
+        />
+        <img
+          src="https://rrtravelscabs.com/wp-content/uploads/2023/11/b3.jpg"
+        />
+        <img
+          src="https://www.trawell.in/blog/wp-content/uploads/2021/06/Pratapgad_Fort_Main.jpg"
+        />
+        <img
+          src="https://kevinstandagephotography.wordpress.com/wp-content/uploads/2024/12/ksp_0675-2.jpg"
+        />
+        <img src="https://ichef.bbci.co.uk/images/ic/1920xn/p0fnl2c2.jpg" />
+
+        <!-- EXTRA IMAGES FOR RICH LOOK -->
+        <img
+          src="https://media.assettype.com/outlooktraveller/import/outlooktraveller/public/uploads/articles/explore/files/2015/03/100715164800-Raigad-Carousel.jpg?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvBq0ssurvO_ykU_W5lAlYiQCvPO--t1iMa5tM0FoWxw&s&ec=121585071"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI-YGqdGlieeJ20Oriy1_pOXB0nx2irDhqmInGCLEK8Q&s&ec=121585071"
+        />
+        <img
+          src="https://media3.thrillophilia.com/filestore/98db764lq4vu2lmok61iyvmmza37_shivneri%206.jpg?w=400&dpr=2"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7Gop-3fFuB-feqygzMUTO9egQ_xpgrhjo8uKXLXbDnw&s&ec=121585071"
+        />
+      </div>
+    </section>
+  </body>
+</html>

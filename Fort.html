@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forts of Maharashtra</title>
+    <link rel="stylesheet" href="styles1.css" />
+    <script>
+      window.addEventListener("scroll", function () {
+        document
+          .querySelector(".navbar")
+          .classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Forts</div>
+      <ul class="nav-links">
+        <li><a href="Fort.html">Home</a></li>
+        <li><a href="Fort1.html">About</a></li>
+        <li><a href="Fort2.html">Forts</a></li>
+        <li><a href="Fort3.html">Gallery</a></li>
+        <li><a href="Fort4.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero-text">
+        <h1>Forts of Maharashtra</h1>
+        <p>Explore the rich history and beauty of majestic forts.</p>
+        <a href="Fort2.html" class="explore-btn">Explore Forts ➜</a>
+      </div>
+    </section>
+  </body>
+</html>
